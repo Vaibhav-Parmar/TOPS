@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal form</title>
+    <style>
+        form {
+            width: fit-content;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" id="client">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="slt">Salutation: </label><br>
+            <select name="" id="slt">
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="miss">Miss</option>
+                <option value="dr">Dr.</option>
+            </select>           
+            <br><br>
+
+            <label for="fname">First Name: </label>
+            <input type="text" name="" id="fname" class="" placeholder="Enter your firstname" required
+                minlength="3" maxlength="20" />
+            <br><br>
+
+            <label for="lname">Last Name: </label>
+            <input type="text" name="" id="lname" class="" placeholder="Enter your lastname"required
+                minlength=" 3" maxlength="20" />
+            <br><br>
+
+            Gender:
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" required />
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="" id="email" placeholder="Enter your email" required />
+            <br><br>
+
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="" id="dob" required />
+            <br><br>
+
+            <label for="adr" form="client">Address: </label>
+            <br>
+            <textarea
+              name=""
+              cols="30"
+              rows="3"
+              id="intro"
+              placeholder="Type your Address"
+              required
+              minlength="15"
+            ></textarea>
+            <br><br>
+
+            <input type="reset" name="" id="reset" />
+            <input type="submit" name="" id="submit" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
