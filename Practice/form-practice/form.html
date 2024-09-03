@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+</head>
+<body>
+    <h1>Application Form</h1>
+
+    <form action="">
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" placeholder="Enter your First Name" required minlength="3" maxlength="20" />
+
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" placeholder="Enter your Last Name" required minlength=" 3" maxlength="20" />
+        <br><br>
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" id="dob" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="1" placeholder="Type your age" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <select name="" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" placeholder="Enter email address" required>
+        <br><br>
+
+        Positions Available:
+        <input type="radio" name="pos" id="jd" required>
+        <label for="jd">Junior Developer</label>
+        <input type="radio" name="pos" id="md" required>
+        <label for="md">Mid-level Developer</label>
+        <input type="radio" name="pos" id="sd" checked required>
+        <label for="sd">Senior Developer</label>
+        <br><br>
+
+        Programming Language:
+        <input type="checkbox" id="jv" checked>
+        <label for="jv">Java</label>
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" id="pt">
+        <label for="pt">Python</label>
+        <br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" minlength="8" placeholder="Enter Password" required>
+
+        <label for="cpass"> Confirm Password:</label>
+        <input type="password" id="cpass" minlength="8" placeholder="Confirm Password" required>
+        <br><br>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
